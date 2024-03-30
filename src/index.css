@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'KyivTypeSans';
+  src: url('./assets/fonts/KyivTypeSans-VarGX.ttf') format('truetype');
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'KyivTypeTitling-Heavy2';
+  src: url('./assets/fonts/KyivTypeTitling-Heavy2.ttf') format('truetype');
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'KyivTypeSans-Bold';
+  src: url('./assets/fonts/KyivTypeSans-Bold2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KyivTypeSans-Medium';
+  src: url('./assets/fonts/KyivTypeSans-Medium2.ttf') format('truetype');
+}
+
+:root {
+  --primary-black: black;
+  --button-color-one: #456EBD;
+  --button-color-two: #9D2555;
+  --button-color-three: #A98973;
+}
+
+* {
+  margin: 0;
+  font-family: 'KyivTypeSans', sans-serif;
+  font-variation-settings: 'wght' 250;
+  font-size: 20px;
+}
+
+
+/*NAVBAR*/
+.navbar {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .links {
+  margin-right: 120px;
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 45px;
+  text-decoration: none;
+  padding: 6px;
+  color: var(--primary-black);
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  color: var(--button-color-three);
+}
+
+#main-logo {
+  margin-left: 120px;
+  font-family: 'KyivTypeTitling-Heavy2', sans-Titling;
+  font-size: 25px;
+  font-variation-settings: 'wght' 700,
+    'cont' 1000;
+}
+
+#main-logo:hover {
+  cursor: pointer;
+  color: var(--primary-black);
+}
+
+/*HOMEPAGE*/
+
+.image {
+  position: absolute;
+  top: calc(50vh - 400px);
+  left: -300px;
+  animation: rotate 15s linear infinite;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  margin-left: 615px;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  width: 570px;
+}
+
+#p1 {
+  margin-bottom: 0;
+}
+
+#p2 {
+  word-spacing: 10px;
+}
+
+.home h1 {
+  font-size: 60px;
+  font-family: 'KyivTypeSans-Bold';
+  margin-left: -4px;
+}
+
+.home p {
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 250px;
+  text-align: left;
+  font-family: 'KyivTypeSans-Medium';
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+.icon-button {
+  background-image: url('./assets/images/arrow-wave-left-up.svg');
+  background-position: 0px 13px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
