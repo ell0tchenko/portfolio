@@ -6,6 +6,12 @@ import Project from './pages/Project'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
   return (
     <BrowserRouter>
       <div className="App">
