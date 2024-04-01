@@ -73,7 +73,7 @@ html {
 #main-logo {
   margin-left: 8vw;
   padding-left: 0;
-  font-family: 'KyivTypeTitling-Heavy2', sans-Titling;
+  font-family: 'KyivTypeTitling-Heavy2', sans-serif;
   font-size: 25px;
   font-variation-settings: 'wght' 700,
     'cont' 1000;
@@ -157,7 +157,6 @@ p {
   text-align: left;
   font-family: 'KyivTypeSans-Medium';
   cursor: pointer;
-  /* margin-right: 20px; */
   text-decoration: none;
   color: var(--primary-black);
 }
@@ -176,7 +175,8 @@ p {
 }
 
 .about,
-.works {
+.works,
+.project {
   width: 100%;
   margin: -150px 8vw 0 8vw;
 }
@@ -202,8 +202,10 @@ p {
   justify-content: space-between;
 }
 
-.works__container--right {
+.works__container--right,
+.image__container {
   min-width: 450px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -228,4 +230,17 @@ p {
 .red:hover {
   color: var(--button-color-two);
   background-image: url('./assets/images/arrow-wave-left-up-red.svg');
+}
+
+.project__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.5fr;
+}
+
+#project-h1 {
+  text-align: center;
+}
+
+.project-p {
+  font-family: 'KyivTypeSans-Medium';
 }

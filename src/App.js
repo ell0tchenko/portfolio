@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <div className="content">
+        <div className="content" id='content'>
           <Routes>
             <Route exact path='/' Component={Home} />
             <Route exact path='/works' Component={Works} />
