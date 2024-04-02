@@ -17,6 +17,7 @@ const Works = () => {
     const handleMouseOut = () => {
         setHoveredImage(null);
     };
+    document.body.style.overflow = 'auto';
 
     return (
         <div className="works">

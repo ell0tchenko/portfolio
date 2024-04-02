@@ -2,6 +2,7 @@ import MyImg from "../assets/images/my-img.png"
 import AboutImg from "../assets/images/shape-about.png"
 
 const About = () => {
+    document.body.style.overflow = 'auto';
     return (
         <div className="about">
             <div className="about__container--left">

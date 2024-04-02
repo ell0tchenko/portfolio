@@ -17,7 +17,7 @@
   --primary-black: black;
   --button-color-one: #456EBD;
   --button-color-two: #9D2555;
-  --button-color-three: #A98973;
+  --button-color-three: #916d55;
 }
 
 * {
@@ -38,6 +38,7 @@ html {
 .shape {
   position: absolute;
   animation: rotate 15s linear infinite;
+  z-index: -1;
 }
 
 
@@ -90,14 +91,10 @@ html {
   margin: 0 0 0.4rem -0.2rem;
 }
 
-.home p {
-  font-size: 1.1rem;
-}
-
 h1 {
+  margin-bottom: 1.25rem;
   font-size: 3rem;
   font-family: 'KyivTypeSans-Bold', 'Lato-Bold', 'Open Sans-Bold', sans-serif;
-  margin-bottom: 1.5rem;
 }
 
 p {
@@ -113,8 +110,11 @@ p {
 }
 
 .image--left {
-  top: calc(50vh - 20rem);
+  /* top: calc(50vh - 20rem); */
   left: -15rem;
+  opacity: 0.8;
+  display: flex;
+  justify-self: center;
 }
 
 @keyframes rotate {
@@ -156,33 +156,34 @@ p {
 .works {
   height: calc(100vh - 15rem);
   display: flex;
-  align-items: center;
-  margin: 0 8vw;
   justify-content: space-between;
   width: 84vw;
+  margin: 0 8vw;
+}
+
+.about {
+  align-items: center;
 }
 
 .image--right {
   top: calc(1vh - 22.5rem);
   left: 70vw;
   opacity: 0.3;
-  z-index: -1;
 }
 
 .about__container--left {
   max-width: 32.5rem;
 }
 
-.photo {
-  border-radius: 1rem;
-  padding-right: 0.5rem;
+/*WORKS PAGE*/
+.works {
+  align-items: flex-start;
 }
 
-/*WORKS PAGE*/
 .works__container--right,
 .image__container {
-  min-width: 22.5rem;
-  min-height: 30rem;
+  /* min-width: 22.5rem;
+  min-height: 30rem; */
   display: flex;
   flex-direction: column;
 }
@@ -202,6 +203,9 @@ p {
 
 .line {
   margin-bottom: 1rem;
+  background-image: url('./assets//images/wave-line-450.svg');
+  width: 450px;
+  height: 10px;
 }
 
 .red:hover {
@@ -228,6 +232,7 @@ p {
 
 .project__container {
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 2.5fr;
 }
 
@@ -242,7 +247,6 @@ p {
 .project__image {
   padding: 0;
   width: 84vw;
-  border-radius: 0;
 }
 
 #project__button {
@@ -265,4 +269,167 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #686868;
+}
+
+@media (max-width: 1441px) {
+  .about__container--left {
+    max-width: 23rem;
+  }
+
+  #my-image {
+    width: 20rem;
+  }
+
+  .image__container {
+    margin-top: 5.7rem;
+    max-width: 400px;
+  }
+
+  .works__container--right {
+    max-width: 400px;
+  }
+
+  .line {
+    width: 400px;
+  }
+}
+
+
+
+@media (max-width: 1025px) {
+  .shape {
+    scale: 0.6;
+  }
+
+  .navbar {
+    height: 5rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .image--left {
+    left: -20rem;
+  }
+
+  #main-logo {
+    font-size: 1rem;
+  }
+
+  .home {
+    margin: 0 0 0 35vw;
+    width: 24rem;
+    height: calc(100vh - 5rem);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .image--right {
+    left: 50vw;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: fit-content;
+    overflow: auto;
+  }
+
+  .about__container--left {
+    max-width: 84vw;
+    margin-bottom: 2rem;
+  }
+
+  #my-image {
+    width: 22.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .works__container--right {
+    max-width: 350px;
+  }
+
+  .line {
+    width: 350px;
+  }
+
+  .image__container {
+    margin-top: 5.1rem;
+    max-width: 300px;
+  }
+
+  .works__type,
+  .works__title,
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+@media (max-width: 769px) {
+  .shape {
+    scale: 0.4;
+    top: -400px;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+  }
+
+  #main-logo {
+    font-size: 0.8rem;
+  }
+
+  .home {
+    width: 84vw;
+    margin: 0 8vw;
+  }
+
+  .works__title,
+  .works__type,
+  p {
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button__container {
+    min-width: 84vw;
+  }
+
+  .button {
+    font-size: 0.7rem;
+    padding: 0.7rem 0;
+  }
+
+  .image__container {
+    display: none;
+  }
+
+  .works__container--right {
+    max-width: 84vw;
+    width: 84vw;
+  }
+
+  .line {
+    width: 84vw;
+  }
+
+  .project__container {
+    grid-template-columns: none;
+  }
+
+  .project__category,
+  .project__values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
