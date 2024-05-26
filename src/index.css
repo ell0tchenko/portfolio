@@ -432,4 +432,15 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
+  #my-image {
+    width: 83vw;
+  }
+
+}
+
+@media (max-width: 321px) {
+  #my-image {
+    width: 13rem;
+    margin-bottom: 1rem;
+  }
 }
