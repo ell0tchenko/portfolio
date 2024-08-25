@@ -253,6 +253,12 @@ p {
   align-self: flex-end;
 }
 
+.project__video {
+  width: 84vw;
+  height: 42vw;
+  margin-bottom: 1.5rem;
+}
+
 /*SCROLLBAR*/
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -287,6 +293,7 @@ p {
 
   .works__container--right {
     max-width: 400px;
+
   }
 
   .line {
@@ -348,6 +355,10 @@ p {
     margin-bottom: 2rem;
   }
 
+  .works {
+    gap: 1rem;
+  }
+
   .works__container--right {
     max-width: 350px;
   }
@@ -358,7 +369,8 @@ p {
 
   .image__container {
     margin-top: 5.1rem;
-    max-width: 300px;
+    max-width: 400px;
+    min-width: 300px;
   }
 
   .works__type,

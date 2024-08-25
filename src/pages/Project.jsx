@@ -3,7 +3,11 @@ import ProjectImg from '../assets/images/shape-project.png';
 import { Projects } from "../data/data.js"
 
 
-
+const extractYoutubeVideoId = (url) => {
+    const regex = /(?:https?:\/\/)?(?:www\.)?youtube\.com\/(?:watch\?v=|embed\/|v\/|.+\?v=)?([^&\n?#]+)/;
+    const matches = url.match(regex);
+    return matches ? matches[1] : null;
+};
 
 const Project = () => {
     let { projectName } = useParams();
@@ -35,6 +39,18 @@ const Project = () => {
             {project.photos.map((photo, index) => (
                 <img className='photo project__image' key={index} src={photo} alt={`Project's screenshot ${index + 1}`} loading="lazy" />
             ))}
+            {project.video && (
+                <div className="project__video">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src={`https://www.youtube.com/embed/${extractYoutubeVideoId(project.video)}`} 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen>
+                    </iframe>
+                </div>
+            )}
             <Link to="/works" id='project__button' className='button red'>back to works</Link>
         </div>
     );

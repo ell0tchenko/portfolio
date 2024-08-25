@@ -6,6 +6,7 @@ import CatHub from "../assets/images/CH_project/cathub.png";
 import Princess from "../assets/images/STP_project/savingtheprincess.png";
 import AirFun from "../assets/images/AFS_project/airfunstore.png";
 import Shanny from "../assets/images/Shanny_project/shanny.png"
+import DeliverNow from "../assets/images/DN_project/DeliverNow.png"
 
 const Works = () => {
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -27,6 +28,7 @@ const Works = () => {
                 {hoveredImage === "mc-agroland" && <img className="photo" src={Agroland} alt="Branding cup MC Agroland" />}
                 {hoveredImage === "air-fun-store" && <img className="photo" src={AirFun} alt="Air Fun Store logo" />}
                 {hoveredImage === "shanny" && <img className="photo" src={Shanny} alt="Shanny logo" />}
+                {hoveredImage === "delivernow" && <img className="photo" src={DeliverNow} alt="DeliverNow cover" />}
             </div>
             <div className="works__container--right">
                 <h1>WORKS</h1>
@@ -35,7 +37,8 @@ const Works = () => {
                     <WorksElem title="cathub" type="web development" isLined={true} onMouseOver={() => handleMouseOver("cathub")} onMouseOut={handleMouseOut} />
                     <WorksElem title="mc agroland" type="brading" isLined={true} onMouseOver={() => handleMouseOver("mc-agroland")} onMouseOut={handleMouseOut} />
                     <WorksElem title="air fun store" type="brading" isLined={true} onMouseOver={() => handleMouseOver("air-fun-store")} onMouseOut={handleMouseOut}/>
-                    <WorksElem title="shanny" type="brading" isLined={false} onMouseOver={() => handleMouseOver("shanny")} onMouseOut={handleMouseOut}/>
+                    <WorksElem title="shanny" type="brading" isLined={true} onMouseOver={() => handleMouseOver("shanny")} onMouseOut={handleMouseOut}/>
+                    <WorksElem title="delivernow" type="UX&UI design" isLined={false} onMouseOver={() => handleMouseOver("delivernow")} onMouseOut={handleMouseOut}/>
                 </div>
             </div>
             <img className="shape image--right" src={WorksImg} alt="Decorative shape" />

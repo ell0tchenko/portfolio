@@ -45,6 +45,19 @@ import S_8 from '../assets/images/Shanny_project/Frame 20.png'
 import S_9 from '../assets/images/Shanny_project/Frame 21.png'
 import S_10 from '../assets/images/Shanny_project/Frame 22.png'
 import S_11 from '../assets/images/Shanny_project/Frame 23.png'
+import DN_1 from '../assets/images/DN_project/DN_1.jpg'
+import DN_2 from '../assets/images/DN_project/DN_2.jpg'
+import DN_3 from '../assets/images/DN_project/DN_3.jpg'
+import DN_4 from '../assets/images/DN_project/DN_4.jpg'
+import DN_5 from '../assets/images/DN_project/DN_5.jpg'
+import DN_6 from '../assets/images/DN_project/DN_6.jpg'
+import DN_7 from '../assets/images/DN_project/DN_7.jpg'
+import DN_8 from '../assets/images/DN_project/DN_8.jpg'
+import DN_9 from '../assets/images/DN_project/DN_9.jpg'
+import DN_10 from '../assets/images/DN_project/DN_10.jpg'
+import DN_11 from '../assets/images/DN_project/DN_11.jpg'
+import DN_12 from '../assets/images/DN_project/DN_12.jpg'
+import DN_13 from '../assets/images/DN_project/DN_13.jpg'
 
 export const Projects = {
     "saving-the-princess": {
@@ -91,5 +104,15 @@ export const Projects = {
         "photos": [S_1, S_3, S_4, S_5, S_6, S_7, S_8, S_9, S_10, S_11],
         "demotext": "See more on Behance",
         "demolink": "https://www.behance.net/gallery/124450333/Shanny-(konditerska)-Brand-ID"
+    },
+    "delivernow": {
+        "title": "DELIVERNOW",
+        "category": "UX&UI Design",
+        "year": "2024",
+        "description": "This project focused on a complete redesign of the food delivery app DeliverNow for all categories of users: customers, restaurants, runners, and runner managers.",
+        "photos": [DN_1, DN_2, DN_3, DN_4, DN_5, DN_6, DN_7, DN_8, DN_9, DN_10, DN_11, DN_12, DN_13],
+        "video": "https://www.youtube.com/watch?v=AqxnLzEFXpM",
+        "demotext": "See more on Behance",
+        "demolink": "https://www.behance.net/gallery/206334693/DeliverNow-Mobile-App-UX-UI-design"
     },
 }
