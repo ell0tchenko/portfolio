@@ -9,10 +9,6 @@ const Home = () => {
             <h1>ELINA OTCHENKO</h1>
             <p id="p2">I'm a graphic designer, UX/UI designer and front-end web developer.</p>
             <p id="p3">From wireframes to code, I bring ideas to life to create unforgettable digital experiences.</p>
-            <div className='button__container'>
-                <Link className='button blue' to="/works">see my projects</Link>
-                <Link className='button blue' to="/about">more about me</Link>
-            </div>
         </div>
     );
 }

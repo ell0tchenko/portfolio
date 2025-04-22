@@ -13,6 +13,8 @@
   src: url('./assets/fonts/KyivTypeSans-Bold2.ttf') format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+
 :root {
   --primary-black: black;
   --button-color-one: #456EBD;
@@ -59,20 +61,18 @@ html {
   font-size: 1.25rem;
 }
 
-.navbar a:hover {
-  color: var(--button-color-three);
-}
-
 #main-logo {
-  margin-left: 8vw;
   padding-left: 0;
-  font-family: 'KyivTypeTitling-Heavy', 'KyivTypeSans-Bold', sans-serif;
-  font-size: 1.25rem;
+  max-width: 3rem;
 }
 
 #main-logo:hover {
   cursor: pointer;
   color: var(--primary-black);
+}
+
+#logo_container{
+ margin-left: 8vw;
 }
 
 
@@ -88,7 +88,7 @@ html {
 }
 
 .home h1 {
-  margin: 0 0 0.4rem -0.2rem;
+  margin: 0 0 1rem -0.2rem;
 }
 
 h1 {
@@ -129,26 +129,46 @@ p {
 
 .button__container {
   min-width: 20rem;
-  max-width: fit-content;
+  /* max-width: fit-content; */
   display: flex;
   justify-content: space-between;
 }
 
 .button {
+  all: unset; /* Resets all default styles */
+  display: inline-block;
   padding: 0.5rem 0;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  max-width: 12.5rem;
   text-align: left;
   font-family: 'KyivTypeSans-Bold', 'Lato-Bold', 'Open Sans-Bold', sans-serif;
-  cursor: pointer;
   text-decoration: none;
   color: var(--primary-black);
+  animation: scale-down 0.5s ease-in-out forwards;
 }
 
-.blue:hover {
+.button:hover {
+  cursor: pointer;
+  animation: scale-up 0.5s ease-in-out forwards;
   color: var(--button-color-one);
-  background-image: url('./assets/images/arrow-wave-left-up-blue.svg');
+}
+
+@keyframes scale-down {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 /*ABOUT PAGE*/
@@ -199,6 +219,31 @@ p {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+  animation: scale-down 0.5s ease-in-out forwards;
+}
+
+.works-elem__container:hover {
+  cursor: pointer;
+  animation: scale-up 0.5s ease-in-out forwards;
+  color: var(--button-color-one);
+}
+
+@keyframes scale-down {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .line {
@@ -208,11 +253,18 @@ p {
   height: 10px;
 }
 
-.red:hover {
-  color: var(--button-color-two);
-  background-image: url('./assets/images/arrow-wave-left-up-red.svg');
+.photo {
+  animation: scale-photo 0.5s ease-in-out forwards;
 }
 
+@keyframes scale-photo {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 /*PROJECT PAGE*/
 .project {
@@ -446,6 +498,9 @@ p {
 
   #my-image {
     width: 83vw;
+  }
+  .right-text {
+    text-align: right;
   }
 
 }

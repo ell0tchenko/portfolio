@@ -45,74 +45,75 @@ import S_8 from '../assets/images/Shanny_project/Frame 20.png'
 import S_9 from '../assets/images/Shanny_project/Frame 21.png'
 import S_10 from '../assets/images/Shanny_project/Frame 22.png'
 import S_11 from '../assets/images/Shanny_project/Frame 23.png'
-import DN_1 from '../assets/images/DN_project/DN_1.jpg'
-import DN_2 from '../assets/images/DN_project/DN_2.jpg'
-import DN_3 from '../assets/images/DN_project/DN_3.jpg'
-import DN_4 from '../assets/images/DN_project/DN_4.jpg'
-import DN_5 from '../assets/images/DN_project/DN_5.jpg'
-import DN_6 from '../assets/images/DN_project/DN_6.jpg'
-import DN_7 from '../assets/images/DN_project/DN_7.jpg'
-import DN_8 from '../assets/images/DN_project/DN_8.jpg'
-import DN_9 from '../assets/images/DN_project/DN_9.jpg'
-import DN_10 from '../assets/images/DN_project/DN_10.jpg'
-import DN_11 from '../assets/images/DN_project/DN_11.jpg'
-import DN_12 from '../assets/images/DN_project/DN_12.jpg'
-import DN_13 from '../assets/images/DN_project/DN_13.jpg'
+import DN_1 from '../assets/images/DN_project/DN_1.png'
+import DN_2 from '../assets/images/DN_project/DN_2.png'
+import DN_3 from '../assets/images/DN_project/DN_3.png'
+import DN_4 from '../assets/images/DN_project/DN_4.png'
+import DN_5 from '../assets/images/DN_project/DN_5.png'
+import DN_6 from '../assets/images/DN_project/DN_6.png'
+import DN_7 from '../assets/images/DN_project/DN_7.png'
+import DN_8 from '../assets/images/DN_project/DN_8.png'
+import DN_9 from '../assets/images/DN_project/DN_9.png'
+import DN_10 from '../assets/images/DN_project/DN_10.png'
+import DN_11 from '../assets/images/DN_project/DN_11.png'
+import DN_12 from '../assets/images/DN_project/DN_12.png'
+import DN_13 from '../assets/images/DN_project/DN_13.png'
+import DN_14 from '../assets/images/DN_project/DN_14.png'
 
 export const Projects = {
-    "saving-the-princess": {
-        "title": "SAVE THE PRINCESS",
-        "category": "web development",
+    "Saving-the-Princess": {
+        "title": "SAVING THE PRINCESS",
+        "category": "Web Development",
         "year": "2023",
         "description": "Saving the Princess is a captivating JavaScript game that offers a whimsical adventure where players rescue a spirited princess from her stepmother's schemes. With Tetris-style gameplay and an action-packed storyline, players overcome challenges to save the day.",
         "photos": [STP_1, STP_2, STP_3, STP_4, STP_5, STP_6, STP_7],
-        "demotext": "Try on GitHub",
+        "demotext": "TRY ON GITHUB",
         "demolink": "https://github.com/ell0tchenko/Saving-the-Princess"
     },
-    "cathub": {
+    "CatHub": {
         "title": "CATHUB",
-        "category": "web development",
+        "category": "Web Development",
         "year": "2023",
         "description": "CatHub is a universal platform designed for communication, post sharing, socializing, and fostering interactions among users, among other functionalities. Its frontend is developed using Next.js, while the backend is powered by Golang.",
         "photos": [CH_1, CH_2, CH_3, CH_4, CH_5],
-        "demotext": "Try on GitHub",
+        "demotext": "TRY ON GITHUB",
         "demolink": "https://github.com/ell0tchenko/Cat-Hub"
     },
-    "mc-agroland": {
-        "title": "MC AGROLAND",
-        "category": "branding",
+    "MK-Agroland": {
+        "title": "MK AGROLAND",
+        "category": "Branding",
         "year": "2020",
-        "description": "MK AGROLAND is engaged in the cultivation and sale of agricultural products. The aim of this project is to develop a corporate identity that would distinguish it from others, forming an image and at the same time showing the main mission.",
+        "description": "MK Agroland is engaged in the cultivation and sale of agricultural products. The aim of this project is to develop a corporate identity that would distinguish it from others, forming an image and at the same time showing the main mission.",
         "photos": [MCA_1, MCA_2, MCA_3, MCA_4, MCA_5, MCA_6, MCA_7, MCA_8, MCA_9, MCA_10, MCA_11, MCA_12, MCA_13],
-        "demotext": "See more on Behance",
+        "demotext": "SEE MORE ON BEHANCE",
         "demolink": "https://www.behance.net/gallery/115399691/MKAGROLAND-Corporate-identity"
     },
-    "air-fun-store": {
+    "Air-Fun-Store": {
         "title": "AIR FUN STORE",
-        "category": "branding",
+        "category": "Branding",
         "year": "2023",
-        "description": "AiR FUN STORE is a gift shop for people who love aviation in all its forms. The goal of this project was to create an identity for the Instagram store, but with the possibility of further scaling. I also developed branded products for the store and design of goods for sale.",
+        "description": "Air Fun Store is a gift shop for people who love aviation in all its forms. The goal of this project was to create an identity for the Instagram store, but with the possibility of further scaling. I also developed branded products for the store and design of goods for sale.",
         "photos": [AFS_1, AFS_2, AFS_3, AFS_4, AFS_5, AFS_6, AFS_7, AFS_8, AFS_9, AFS_10, AFS_11, AFS_12],
-        "demotext": "See more on Behance",
+        "demotext": "SEE MORE ON BEHANCE",
         "demolink": "https://www.behance.net/gallery/130894419/AIR-FAN-STORE-Brand-Identity"
     },
-    "shanny": {
+    "Shanny": {
         "title": "SHANNY",
-        "category": "branding",
+        "category": "Branding",
         "year": "2023",
-        "description": "SHANNY – a small craft confectionery with exquisite desserts that give not only taste pleasure but also aesthetic pleasure. The owner's love and a piece of her soul are put into each of them. The main task was to create pleasant sweet images full of delicate elegance and home warmth.",
+        "description": "Shanny – a small craft confectionery with exquisite desserts that give not only taste pleasure but also aesthetic pleasure. The owner's love and a piece of her soul are put into each of them. The main task was to create pleasant sweet images full of delicate elegance and home warmth.",
         "photos": [S_1, S_3, S_4, S_5, S_6, S_7, S_8, S_9, S_10, S_11],
-        "demotext": "See more on Behance",
+        "demotext": "SEE MORE ON BEHANCE",
         "demolink": "https://www.behance.net/gallery/124450333/Shanny-(konditerska)-Brand-ID"
     },
-    "delivernow": {
+    "DeliverNow": {
         "title": "DELIVERNOW",
         "category": "UX&UI Design",
         "year": "2024",
         "description": "This project focused on a complete redesign of the food delivery app DeliverNow for all categories of users: customers, restaurants, runners, and runner managers.",
-        "photos": [DN_1, DN_2, DN_3, DN_4, DN_5, DN_6, DN_7, DN_8, DN_9, DN_10, DN_11, DN_12, DN_13],
+        "photos": [DN_1, DN_2, DN_3, DN_4, DN_5, DN_6, DN_7, DN_8, DN_9, DN_10, DN_11, DN_12, DN_13, DN_14],
         "video": "https://www.youtube.com/watch?v=AqxnLzEFXpM",
-        "demotext": "See more on Behance",
+        "demotext": "SEE MORE ON BEHANCE",
         "demolink": "https://www.behance.net/gallery/206334693/DeliverNow-Mobile-App-UX-UI-design"
     },
 }

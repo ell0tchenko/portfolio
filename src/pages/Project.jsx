@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import ProjectImg from '../assets/images/shape-project.png';
+import ProjectShape from '../assets/images/shape-project.png';
 import { Projects } from "../data/data.js"
 
 
@@ -20,20 +20,20 @@ const Project = () => {
 
     return (
         <div className='project'>
-            <img className="shape image--right" src={ProjectImg} alt="Decorative shape" />
+            <img className="shape image--right" src={ProjectShape} alt="Decorative shape" />
             <h1 id='project-h1'>{project.title}</h1>
             <div className="project__container">
                 <div className="project__category">
-                    <p className='project-p'>category</p>
-                    <p className='project-p'>year</p>
+                    <p className='project-p'>Category</p>
+                    <p className='project-p right-text'>Year</p>
                 </div>
                 <div className="project__values">
-                    <p>{project.category}</p>
-                    <p>{project.year}</p>
+                    <p >{project.category}</p>
+                    <p className='right-text'>{project.year}</p>
                 </div>
                 <div className="project__content">
                     <p>{project.description}</p>
-                    <a className='button blue' href={project.demolink} target='_blank' rel="noreferrer">{project.demotext}</a>
+                    <a className='button' href={project.demolink} target='_blank' rel="noreferrer">{project.demotext}</a>
                 </div>
             </div>
             {project.photos.map((photo, index) => (
@@ -51,7 +51,7 @@ const Project = () => {
                     </iframe>
                 </div>
             )}
-            <Link to="/works" id='project__button' className='button red'>back to works</Link>
+            <Link to="/works" id='project__button' className='button'>BACK TO WORKS</Link>
         </div>
     );
 };
